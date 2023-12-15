@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Examples</title>
+    <style>
+        /* Some basic styles for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Basic Image</h2>
+    <img src="example.jpg" alt="Example Image">
+
+    <h2>Image with Caption</h2>
+    <figure>
+        <img src="example.jpg" alt="Example Image">
+        <figcaption>This is an example image with a caption.</figcaption>
+    </figure>
+
+    <h2>Image Link</h2>
+    <a href="https://www.example.com">
+        <img src="example.jpg" alt="Example Image Link">
+    </a>
+
+    <h2>Image Map</h2>
+    <img src="usamap.png" alt="USA Map" usemap="#usamap">
+    <map name="usamap">
+        <area shape="rect" coords="0,0,200,200" alt="Northwest">
+        <area shape="rect" coords="200,0,400,200" alt="North Central">
+        <area shape="rect" coords="0,200,200,400" alt="Southwest">
+        <area shape="rect" coords="200,200,400,400" alt="South Central">
+    </map>
+
+    <h2>Responsive Images</h2>
+    <img src="example-large.jpg" alt="Responsive Image" srcset="example-small.jpg 400w, example-medium.jpg 800w, example-large.jpg 1200w" sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px">
+
+</body>
+</html>
+<!--
+    In this example, different scenarios for using images are covered, including a basic image, an image with a caption, an image link, an image map, and responsive images. Adjust the file paths and content according to your specific needs.
+-->

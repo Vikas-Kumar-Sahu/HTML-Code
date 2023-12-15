@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Types Example</title>
+    <style>
+        /* Some basic styles for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Text Input</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" maxlength="20" name="username" placeholder="Enter your username">
+
+    <h2>Password Input</h2>
+    <label for="password">Password:</label>
+    <input type="password" id="password" maxlength="15" minlength="8" name="password" placeholder="Enter your password" required>
+
+    <h2>Checkbox</h2>
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+    <label for="subscribe">Subscribe to newsletter</label>
+
+    <h2>Radio Buttons</h2>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <h2>Dropdown List (Select)</h2>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+
+    <h2>Textarea</h2>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Type your message here"></textarea>
+
+    <h2>File Input</h2>
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file">
+
+    <h2>Submit Button</h2>
+    <input type="submit" value="Submit">
+
+    <h2>Reset Button</h2>
+    <input type="reset" value="Reset">
+
+    <h2>Button</h2>
+    <button type="button">Click me</button>
+
+    <h2>Hidden Input</h2>
+    <input type="hidden" name="hiddenField" value="hiddenValue">
+
+</body>
+</html>
+<!--
+    In this example, various form elements are demonstrated, including text input, password input, checkbox, radio buttons, dropdown list (select), textarea, file input, submit button, reset button, button, and hidden input. Each element is accompanied by a label for clarity. Customize the content and attributes based on your specific form requirements.
+-->
